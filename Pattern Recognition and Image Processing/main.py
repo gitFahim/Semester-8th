@@ -1,4 +1,6 @@
-import data as data
+# This file contains read image, convert to numpy array, write numpy array, converting numpy array to list
+# write the list(containing RGB values of every pixel, converting back to numpy array and finally converting back to image
+
 import imageio
 import numpy
 from numpy import asarray
