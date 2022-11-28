@@ -1,0 +1,25 @@
+Main Tasks:
+
+1. Textual Content Extractor
+2. Information Retrieval Normalization Process
+3. Smell Detector
+
+1. Textual Content Extractor:
+
+    i. Zip file open
+    ii. Method extract
+
+2. IR Normalization Process
+
+    I.  separating composed identifiers using the camel case splitting which splits words based on underscores, capital letters and numerical digits;
+    Ii.  reducing to lower case letters of extracted words;
+    Iii.  removing special characters, programming keywords and common English stop
+    words;
+    Iv.  stemming words to their original roots via Porter’s stemmer [51].
+
+    Finally, the normalized words are weighted using the term frequency - inverse document frequency (tfidf ) schema [50], which reduces the relevance of too generic words that are contained in most source components.
+
+3.Smell Detector
+
+    i) The detector relies on Latent Semantic Indexing (LSI), an extension of the Vector Space Model.Which models code components as vectors of terms occurring in a given system.
+    LSI uses singular value decomposition (SVD).
